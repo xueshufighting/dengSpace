@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- width控制 viewport 的大小，可以指定的一个值或者特殊的值，
+        device-width 为设备宽度（单位为缩放为 100% 时的 CSS 的像素）。 -->
+    <!-- initial-scale即页面初始缩放程度，在展现的时候就会以target density分辨率的1:1来展现。 -->
+    <link rel="stylesheet" href="./css/body.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <title>小邓的主页</title>
+</head>
+<body>
+    <!-- 页眉区 -->
+    <nav class="homenav">
+        <div class="navtitle"><strong>DENG DAN</strong>|MY PROFILE</div>
+        <a href="index.html">HOME</a>
+        <a href="./html/about.html">ABOUT</a>
+        <a href="./html/blog.html">BLOG</a>
+        <a href="./html/album.html">ALBUM</a>
+        <a href="./html/join.html">JOIN</a>
+    </nav>
+    <!-- 主体部分 -->
+    <main>
+        <!-- 第一板块 首页欢迎区 -->
+    <section>
+        <div class="titleimg">
+            <div class="title">
+                There will be gains when there is effort.<br>
+                Only with effort can there be gains.<br>
+                <span class="Chinese">欢迎来到我的主页！<br>点击导航栏或向下滑动查看更多~</span>
+            </div>
+        </div>
+    </section>
+    <!-- 第二板块 卡片简介区 -->
+    <section>
+        <a href="./html/about.html">
+            <div class="part1 pt">
+                <div class="img"></div>
+                <article>
+                    <h1>关于<span class="English">ABOUT</span></h1>
+                    <p>&emsp;&emsp;有关我的一些信息</p>
+                    <!-- &emsp;占据的宽度正好是1个中文宽度. -->
+                    <p>&emsp;&emsp;For some information about me, you can learn about my background and other relevant information.</p>
+                </article>
+            </div>
+        </a>
+        <!-- 每个卡片超链接到对应子页面 -->
+        <a href="./html/blog.html">
+            <div class="part2 pt">
+                <!-- 卡片文字描述部分 -->
+                <article>
+                    <h1>博客<span class="English">BLOG</span></h1>
+                    <p>&emsp;&emsp;关于我的经历的博客</p>
+                    <p>&emsp;&emsp;About my blog, you can learn about my learning and project experiences here.</p>
+                </article>
+                <!-- 卡片对应图片部分 -->
+                <div class="img"></div>
+            </div>
+        </a>
+        <a href="./html/album.html">
+            <div class="part3 pt">
+                <div class="img"></div>
+                <article>
+                    <h1>相册<span class="English">ALBUM</span></h1>
+                    <p>&emsp;&emsp;我的游玩相册</p>
+                    <p>&emsp;&emsp;My album, about some pictures I took while traveling with friends.</p>
+                </article>
+            </div>
+        </a>
+        <a href="./html/join.html">
+            <div class="part4 pt">
+                <article>
+                    <h1>加入<span class="English">JOIN</span></h1>
+                    <p>&emsp;&emsp;加入我的奇妙聊天区</p>
+                    <p>&emsp;&emsp;My contact information, welcome interesting friends to visit.</p>
+                </article>
+                <div class="img"></div>
+            </div>
+        </a>
+    </section>  
+    </main>
+    <!-- 页脚区 -->
+    <footer>
+        <p>@2022-2023  |  BY:deng</p>
+        <p>There will be gains when there is effort.</p>
+        <p>Only with effort can there be gains.</p>
+    </footer>
+</body>
+</html>

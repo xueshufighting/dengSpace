@@ -1,0 +1,85 @@
+section #tableContainer {
+    width: 575px;
+    height: 690px;
+    float: right;
+    background-color: rgba(169, 199, 240, 0.7);
+    /* 设置盒子的边缘阴影 */
+    box-shadow: -2px 5px 10px #3a3838;
+    margin: 40px 2% 10px auto;
+    margin-bottom: 10px;
+    animation: tableload 1.5s linear;
+     /* 添加动画效果，动画名称为tableload，动画时长1.5秒，效果为线性 */
+}
+
+table {
+    margin: 0 auto;
+    border: 1px solid;
+    /* 单元格间距 */
+    border-spacing: 0;
+    /* 边框合并 */
+    /* border-collapse: collapse; */
+}
+
+caption {
+    color: #5799d5;
+    /* 字体 */
+    font-family: "宋体";
+    /* 字体大小 */
+    font-size: 22px;
+    /* 字间距 */
+    letter-spacing: 10px;
+    /* 文本居中 */
+    text-align: center;
+}
+
+td {
+    height: 28px;
+    border: 1px solid #776363;
+    text-align: center;
+    color: #5799d5;
+    /* 粗体 */
+    font-weight: bold;
+}
+/* 设置教育背景行的行高 */
+.d {
+    height: 82px;
+}
+/* 设置实习经历行的行高 */
+.d1 {
+    height: 50px;
+}
+/* 设置校内经历行的行高 */
+.d2 {
+    height: 92px;
+}
+/* 设置前几行第一、三列的宽度 */
+.x1 {
+    width: 82px;
+}
+/* 设置第二列的宽度 */
+.x2 {
+    width: 120px;
+}
+/* 设置第四列的宽度 */
+.x3 {
+    width: 140px;
+}
+
+/* 使用@keyframes规则，创建动画。 */
+/* 0％是开头动画，100％是当动画完成。 */
+@keyframes tableload{
+    /* 设置当动画开始时，表格透明度为0，即页面上不显示 */
+    0%{
+        opacity: 0;
+    }
+    /* 当动画加载到70%时，表格透明度为0，距离指定位置上边距为100px */
+    70%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    /* 当动画加载完成时，表格透明度为1即完全显示，距离指定位置上边距为40px */
+    100%{
+        opacity: 1;
+        margin-top: 40px;
+    }
+}
